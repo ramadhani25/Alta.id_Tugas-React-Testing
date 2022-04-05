@@ -21,26 +21,24 @@ describe("FormCoding", () => {
     expect(inputElement.value).toBe("input");
   });
 
-  //   it("fetches stories from API and displays", async () => {
-  //     const stories = [
-  //       { objectID: "1", title: "Hello" },
-  //       { objectID: "2", title: "React" },
-  //     ];
+  // it("fetches stories from API and displays", async () => {
+  //   const stories = [
+  //     { objectID: "1", title: "Hello" },
+  //     { objectID: "2", title: "React" },
+  //   ];
 
-  //     axios.get.mockResolvedValueOnce(() => {
-  //       Promise.resolve({ data: { hits: stories } });
-  //     });
-
-  //     render(<Search />);
-
-  //     await act(async () => {
-  //       await userEvent.click(screen.getByRole("button"));
-  //     });
-
-  //     const items = await screen.findAllByRole("listitem");
-
-  //     expect(items).toHaveLength(2);
+  //   axios.get.mockResolvedValueOnce(() => {
+  //     Promise.resolve({ data: { hits: stories } });
   //   });
+
+  //   render(<Search />);
+
+  //   await act(async () => await userEvent.click(screen.getByRole("button")));
+
+  //   const items = await screen.findAllByRole("listitem");
+
+  //   expect(items).toHaveLength(2);
+  // });
 
   it("fetches stories from API and fails", async () => {
     axios.get.mockResolvedValueOnce(() => {
